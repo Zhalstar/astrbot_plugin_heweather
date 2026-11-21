@@ -1,0 +1,47 @@
+{
+  "default_city": {
+    "description": "默认城市",
+    "hint": "默认查询的城市，未指定要查询的城市时，默认查询此城市",
+    "type": "string",
+    "default": "上海"
+  },
+  "jwt_sub": {
+    "description": "JWT 项目 ID",
+    "hint": "和风天气控制台的项目 ID",
+    "type": "string",
+    "default": ""
+  },
+  "jwt_kid": {
+    "description": "JWT 凭据 ID",
+    "hint": "上传公钥后获取的凭据 ID",
+    "type": "string",
+    "default": ""
+  },
+  "jwt_private_key": {
+    "description": "Ed25519 私钥",
+    "hint": "粘贴完整 PEM 私钥；多行文本会自动转换为换行",
+    "type": "text",
+    "default": ""
+  },
+  "forecast_days": {
+    "description": "未来天气预报天数",
+    "hint": "取值 1-30，具体可用天数取决于和风天气套餐权限",
+    "type": "int",
+    "slider": {
+      "min": 1,
+      "max": 30,
+      "step": 1
+    },
+    "default": 3
+  },
+  "hourlytype": {
+    "description": "逐小时预报时长",
+    "hint": "显示未来 12小时 或 24小时的天气预报",
+    "type": "string",
+    "options": [
+      "12 小时",
+      "24 小时"
+    ],
+    "default": "12 小时"
+  }
+}
