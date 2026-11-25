@@ -1,5 +1,9 @@
 # 更新日志
 
+## v1.0.2
+
+- 仓库迁移到 https://github.com/Zhalstar 账号下
+
 ## v1.0.1 (2026-10-18)
 
 - 新增配置项：`default_city`，默认要查询的城市
